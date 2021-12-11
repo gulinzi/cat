@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>email_icon</title>
+    <g id="page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="drawing-board" transform="translate(-541.000000, -638.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="marshalling-28" transform="translate(537.000000, 632.000000)">
+                <g id="shape" transform="translate(4.000000, 6.000000)">
+                    <path d="M15.98514,2.00891844 L7.8949184,6.64650559 L0.00636858166,2.12275012 C0.0827915616,0.938057402 1.07416744,0 2.28632082,0 L13.7136792,0 C14.8876211,0 15.8556455,0.876925572 15.98514,2.00891844 L15.98514,2.00891844 Z M16,3.67001784 L16,10.7296903 C16,11.9839468 14.9767812,13 13.7136792,13 L2.28632082,13 C1.02321879,13 0,11.9839468 0,10.7296903 L0,3.7901735 L7.53403211,8.10945354 C7.7930211,8.25701313 8.1050816,8.22960921 8.33010482,8.06518567 C8.34071912,8.06096968 8.34921056,8.05464569 8.35982486,8.04832171 L16,3.67001784 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

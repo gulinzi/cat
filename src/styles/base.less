@@ -1,0 +1,134 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: #161616;
+    -webkit-font-smoothing: antialiased;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.app-container {
+    width: 100%;
+    overflow-x:hidden;
+}
+
+.normal-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+// 按钮
+.common-button {
+    border: 0 none;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0 18px;
+    user-select: none;
+    border-radius: 12px;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.1;
+    box-sizing: border-box;
+
+    &.button-primary {
+        background: #64c832;
+    }
+
+    &.button-second {
+        background: linear-gradient(270deg, #ffd21d, #ffa315);
+    }
+
+    &.button-black,
+    &.button-outline {
+        border: 1px solid #3c3c3c;
+        background: #1e1e1e;
+        color: #fff;
+    }
+
+    &.button-outline {
+        border-color: #64c832;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    &.button-42 {
+        height: 42px;
+    }
+
+    &.button-60 {
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .normal-layout{
+        width: unset;
+        padding: 0 15px;
+    }
+
+    .common-button {
+        &.button-42 {
+            height: 36px;
+            font-size: 13px;
+            padding: 0 14px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+
+// 背景
+.common-bg {
+    background: linear-gradient(180deg, #303030, #1b1b1b);
+    border-radius: 16px;
+    border: 1px solid #3c3c3c;
+    box-sizing: border-box;
+}
+
+.over-hidden {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    background: rgb(22, 22, 22);
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgb(60, 60, 60);
+}
+
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: rgb(22, 22, 22);
+}
+
+::-webkit-scrollbar-button {
+    width: 4px;
+    height: 0;
+    background: rgb(22, 22, 22);
+}
