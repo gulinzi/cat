@@ -1,0 +1,223 @@
+
+baiko.png
+size: 820,820
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body_1
+  rotate: false
+  xy: 520, 106
+  size: 125, 111
+  orig: 125, 111
+  offset: 0, 0
+  index: -1
+Body_2
+  rotate: false
+  xy: 513, 486
+  size: 208, 134
+  orig: 208, 136
+  offset: 0, 2
+  index: -1
+Body_3
+  rotate: true
+  xy: 742, 226
+  size: 116, 70
+  orig: 116, 70
+  offset: 0, 0
+  index: -1
+Ear_L_1
+  rotate: false
+  xy: 549, 327
+  size: 163, 157
+  orig: 163, 157
+  offset: 0, 0
+  index: -1
+Ear_R_B_1
+  rotate: false
+  xy: 284, 51
+  size: 106, 160
+  orig: 106, 160
+  offset: 0, 0
+  index: -1
+Ear_R_F_1
+  rotate: true
+  xy: 742, 344
+  size: 140, 70
+  orig: 140, 70
+  offset: 0, 0
+  index: -1
+Face_01
+  rotate: true
+  xy: 714, 269
+  size: 215, 26
+  orig: 215, 26
+  offset: 0, 0
+  index: -1
+Face_02
+  rotate: true
+  xy: 726, 638
+  size: 180, 86
+  orig: 180, 86
+  offset: 0, 0
+  index: -1
+Face_03
+  rotate: false
+  xy: 313, 327
+  size: 234, 112
+  orig: 234, 112
+  offset: 0, 0
+  index: -1
+Face_04
+  rotate: true
+  xy: 170, 25
+  size: 234, 112
+  orig: 234, 112
+  offset: 0, 0
+  index: -1
+Face_05
+  rotate: false
+  xy: 284, 213
+  size: 234, 112
+  orig: 234, 112
+  offset: 0, 0
+  index: -1
+Foot_L_1
+  rotate: false
+  xy: 752, 145
+  size: 65, 79
+  orig: 65, 79
+  offset: 0, 0
+  index: -1
+Foot_R_1
+  rotate: false
+  xy: 724, 21
+  size: 71, 82
+  orig: 71, 82
+  offset: 0, 0
+  index: -1
+Forearm_R_2
+  rotate: true
+  xy: 723, 486
+  size: 134, 71
+  orig: 134, 71
+  offset: 0, 0
+  index: -1
+Head_1
+  rotate: false
+  xy: 2, 579
+  size: 266, 239
+  orig: 266, 239
+  offset: 0, 0
+  index: -1
+Head_2
+  rotate: true
+  xy: 284, 2
+  size: 47, 69
+  orig: 47, 69
+  offset: 0, 0
+  index: -1
+Head_3
+  rotate: false
+  xy: 513, 455
+  size: 31, 29
+  orig: 53, 50
+  offset: 11, 10
+  index: -1
+Head_4
+  rotate: true
+  xy: 515, 4
+  size: 100, 107
+  orig: 100, 107
+  offset: 0, 0
+  index: -1
+Head_5
+  rotate: true
+  xy: 180, 332
+  size: 245, 131
+  orig: 245, 131
+  offset: 0, 0
+  index: -1
+Head_6
+  rotate: false
+  xy: 313, 441
+  size: 198, 191
+  orig: 198, 191
+  offset: 0, 0
+  index: -1
+Head_7
+  rotate: true
+  xy: 2, 34
+  size: 225, 166
+  orig: 225, 166
+  offset: 0, 0
+  index: -1
+Tail_A_1
+  rotate: false
+  xy: 517, 622
+  size: 207, 196
+  orig: 207, 196
+  offset: 0, 0
+  index: -1
+Upperarm_L_1
+  rotate: true
+  xy: 270, 634
+  size: 184, 245
+  orig: 184, 245
+  offset: 0, 0
+  index: -1
+Upperarm_L_2
+  rotate: true
+  xy: 520, 219
+  size: 106, 140
+  orig: 106, 140
+  offset: 0, 0
+  index: -1
+Upperarm_R_1
+  rotate: false
+  xy: 647, 105
+  size: 103, 112
+  orig: 103, 112
+  offset: 0, 0
+  index: -1
+Upperarm_R_2
+  rotate: false
+  xy: 392, 72
+  size: 121, 139
+  orig: 121, 139
+  offset: 0, 0
+  index: -1
+Weapon_01
+  rotate: false
+  xy: 2, 261
+  size: 176, 316
+  orig: 177, 316
+  offset: 0, 0
+  index: -1
+Weapon_02
+  rotate: false
+  xy: 624, 2
+  size: 98, 101
+  orig: 98, 102
+  offset: 0, 1
+  index: -1
+Weapon_03
+  rotate: false
+  xy: 180, 261
+  size: 81, 69
+  orig: 81, 69
+  offset: 0, 0
+  index: -1
+Weapon_04
+  rotate: true
+  xy: 392, 2
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+touying
+  rotate: true
+  xy: 270, 580
+  size: 52, 25
+  orig: 52, 25
+  offset: 0, 0
+  index: -1

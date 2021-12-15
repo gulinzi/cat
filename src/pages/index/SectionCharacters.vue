@@ -37,9 +37,15 @@
                 </div>
             </div>
             <div class="main-info">
-                <div class="cover frcc">
-                    <img v-show="!imgShowLoading" :src="curCat.aniPic" @load="handleLoadGif" alt />
+                <div class="cover frcc" id="cover">
+                    <!-- <img :src="curCat.aniPic" @load="handleLoadGif" alt /> -->
                     <loading v-show="imgShowLoading"></loading>
+                    <canvas
+                        :class="!imgShowLoading ? 'active' : ''"
+                        v-show="!imgShowLoading"
+                        class="spine-view"
+                        ref="canvas"
+                    ></canvas>
                 </div>
                 <div class="scroll-outer">
                     <a
@@ -159,7 +165,10 @@ import SectionCharactersSelect from "./SectionCharactersSelect.vue";
 import { SwiperSlide } from "swiper/vue/swiper-slide";
 import { Swiper } from "swiper/vue/swiper";
 import Loading from '@/components/Loading'
+import { SpinePlayer } from "@esotericsoftware/spine-player"
 import "swiper/swiper.less";
+import catDrawer from '@/utils/catDrawer'
+
 const localeData = useLocale();
 
 const catList = ref([]);
@@ -167,6 +176,8 @@ const curCat = ref({});
 const curCatIndex = ref(0);
 const catSwiper = ref()
 const imgShowLoading = ref(false);
+const spinePlayer = ref();
+const canvas = ref()
 
 const changeCountry = (_catList) => {
     catList.value = _catList || [];
@@ -186,13 +197,8 @@ watch(curCatIndex, (newVal) => {
     }
 })
 watch(curCat, () => {
-    console.log('loading cat...')
-    imgShowLoading.value = true;
+    drawCat()
 }, { deep: true })
-const handleLoadGif = () => {
-    console.log('cat loaded')
-    imgShowLoading.value = false;
-}
 
 const handleClickSlide = (index) => {
     catSwiper.value.slideTo(index);
@@ -208,8 +214,32 @@ const handleSlideNext = () => {
     curCatIndex.value++;
 }
 
+const drawCat = () => {
+    if (canvas.value) {
+        imgShowLoading.value = true;
+        catDrawer.reset();
+        catDrawer.init(canvas.value, 'genesis', curCat.value.name.toLowerCase(), () => {
+            imgShowLoading.value = false
+        })
+    }
+
+}
+
 onMounted(() => {
-    console.log(catSwiper.value)
+
+    // spinePlayer.value = new SpinePlayer("cover", {
+    //     // jsonUrl: "miu/miu.json",
+    //     // atlasUrl: "miu/miu.atlas",
+    //     // animation: "idle",
+    //     jsonUrl: "miu/raptor-pro.json",
+    //     atlasUrl: "miu/raptor-pma.atlas",
+    //     animation: "walk",
+    //     showControls: false,
+    //     premultipliedAlpha: true,
+    //     backgroundColor: "#00000000",
+    //     alpha: true,
+
+    // });
 })
 </script>
 
@@ -340,6 +370,7 @@ onMounted(() => {
 .section-characters-2 .element-list .data-item .s-title {
     color: #7f7f7f;
     font-size: 14px;
+    white-space: nowrap;
 }
 .section-characters-2 .element-list .data-item .s-value {
     margin-top: 8px;
@@ -405,11 +436,21 @@ onMounted(() => {
 
 .section-characters-2 .main-info .cover {
     height: 592px;
-    // background-image: url(../img/icon-cover-bg.65b0e362.svg);
-    // background-position: bottom;
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // position: relative;
+    background-image: url(../../assets/icon-cover-bg.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-color: #161616;
+    canvas {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: -1;
+        &.active {
+            z-index: 10;
+        }
+    }
 }
 .section-characters-2 .scroll-outer {
     margin-top: 36px;
@@ -425,7 +466,7 @@ onMounted(() => {
 .swiper-slide {
     width: 102px !important;
     margin-right: 20px;
-    margin-top:2px;
+    margin-top: 2px;
 }
 
 .section-characters-2 .op-icon {
@@ -531,6 +572,7 @@ onMounted(() => {
     height: 100%;
     content: " ";
     width: 1px;
+    z-index: 10;
     background: linear-gradient(180deg, #2f2f2f, #181818);
 }
 
@@ -548,6 +590,10 @@ onMounted(() => {
         max-width: 346px;
         margin: -30px auto 0;
     }
+}
+#spine-view {
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 1104px) {

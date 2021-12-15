@@ -1,0 +1,167 @@
+
+kina.png
+size: 640,640
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm_r_01
+  rotate: true
+  xy: 529, 463
+  size: 81, 79
+  orig: 81, 79
+  offset: 0, 0
+  index: -1
+Arm_r_02
+  rotate: true
+  xy: 462, 85
+  size: 71, 70
+  orig: 71, 70
+  offset: 0, 0
+  index: -1
+Arrm_l_01
+  rotate: true
+  xy: 379, 81
+  size: 75, 81
+  orig: 75, 81
+  offset: 0, 0
+  index: -1
+Arrm_l_02
+  rotate: false
+  xy: 306, 71
+  size: 71, 95
+  orig: 71, 95
+  offset: 0, 0
+  index: -1
+Body
+  rotate: true
+  xy: 471, 260
+  size: 115, 131
+  orig: 117, 131
+  offset: 2, 0
+  index: -1
+Bow_01
+  rotate: false
+  xy: 462, 24
+  size: 91, 59
+  orig: 91, 59
+  offset: 0, 0
+  index: -1
+Bow_02
+  rotate: false
+  xy: 529, 383
+  size: 93, 78
+  orig: 93, 78
+  offset: 0, 0
+  index: -1
+Ear_l
+  rotate: true
+  xy: 150, 30
+  size: 136, 154
+  orig: 136, 157
+  offset: 0, 3
+  index: -1
+Ear_r
+  rotate: false
+  xy: 2, 78
+  size: 146, 148
+  orig: 146, 148
+  offset: 0, 0
+  index: -1
+Face_01
+  rotate: false
+  xy: 303, 253
+  size: 166, 122
+  orig: 166, 122
+  offset: 0, 0
+  index: -1
+Hat
+  rotate: true
+  xy: 2, 228
+  size: 206, 154
+  orig: 206, 154
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 305, 377
+  size: 258, 222
+  orig: 258, 222
+  offset: 0, 0
+  index: -1
+Jewelry_01
+  rotate: false
+  xy: 2, 13
+  size: 144, 63
+  orig: 144, 63
+  offset: 0, 0
+  index: -1
+Jewelry_02
+  rotate: true
+  xy: 306, 18
+  size: 51, 42
+  orig: 51, 42
+  offset: 0, 0
+  index: -1
+Red_Halo
+  rotate: true
+  xy: 558, 69
+  size: 189, 55
+  orig: 189, 55
+  offset: 0, 0
+  index: -1
+Skirt_01
+  rotate: false
+  xy: 380, 158
+  size: 176, 93
+  orig: 176, 93
+  offset: 0, 0
+  index: -1
+Skirt_02
+  rotate: false
+  xy: 2, 436
+  size: 301, 199
+  orig: 301, 202
+  offset: 0, 0
+  index: -1
+Sleeve_l_01
+  rotate: false
+  xy: 529, 546
+  size: 85, 89
+  orig: 85, 89
+  offset: 0, 0
+  index: -1
+Sleeve_r_01
+  rotate: true
+  xy: 379, 25
+  size: 54, 44
+  orig: 54, 44
+  offset: 0, 0
+  index: -1
+Sleeve_r_02
+  rotate: false
+  xy: 555, 2
+  size: 79, 65
+  orig: 79, 65
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: false
+  xy: 158, 242
+  size: 143, 192
+  orig: 143, 192
+  offset: 0, 0
+  index: -1
+Weapon
+  rotate: true
+  xy: 158, 168
+  size: 72, 220
+  orig: 72, 220
+  offset: 0, 0
+  index: -1
+touying
+  rotate: true
+  xy: 610, 492
+  size: 52, 25
+  orig: 52, 25
+  offset: 0, 0
+  index: -1

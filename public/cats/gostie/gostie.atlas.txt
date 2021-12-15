@@ -1,0 +1,90 @@
+
+gostie.png
+size: 544,544
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xy_1
+  rotate: false
+  xy: 2, 434
+  size: 200, 108
+  orig: 200, 108
+  offset: 0, 0
+  index: -1
+xy_10
+  rotate: true
+  xy: 115, 338
+  size: 54, 56
+  orig: 54, 56
+  offset: 0, 0
+  index: -1
+xy_11
+  rotate: true
+  xy: 115, 394
+  size: 38, 83
+  orig: 38, 83
+  offset: 0, 0
+  index: -1
+xy_2
+  rotate: true
+  xy: 2, 360
+  size: 72, 111
+  orig: 72, 111
+  offset: 0, 0
+  index: -1
+xy_3
+  rotate: false
+  xy: 204, 417
+  size: 168, 125
+  orig: 168, 125
+  offset: 0, 0
+  index: -1
+xy_4
+  rotate: true
+  xy: 200, 366
+  size: 49, 109
+  orig: 49, 109
+  offset: 0, 0
+  index: -1
+xy_5
+  rotate: false
+  xy: 497, 398
+  size: 44, 30
+  orig: 44, 30
+  offset: 0, 0
+  index: -1
+xy_6
+  rotate: true
+  xy: 374, 371
+  size: 57, 121
+  orig: 59, 121
+  offset: 2, 0
+  index: -1
+xy_7
+  rotate: true
+  xy: 311, 350
+  size: 65, 58
+  orig: 65, 58
+  offset: 0, 0
+  index: -1
+xy_8
+  rotate: false
+  xy: 497, 335
+  size: 41, 61
+  orig: 41, 61
+  offset: 0, 0
+  index: -1
+xy_9
+  rotate: false
+  xy: 374, 430
+  size: 168, 112
+  orig: 168, 112
+  offset: 0, 0
+  index: -1
+yz
+  rotate: true
+  xy: 173, 340
+  size: 52, 25
+  orig: 52, 25
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,174 @@
+
+kyuzo.png
+size: 816,816
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arm_L_01
+  rotate: false
+  xy: 579, 79
+  size: 73, 109
+  orig: 73, 109
+  offset: 0, 0
+  index: -1
+Arm_L_02
+  rotate: false
+  xy: 685, 77
+  size: 108, 102
+  orig: 108, 102
+  offset: 0, 0
+  index: -1
+Arm_R_01
+  rotate: false
+  xy: 561, 190
+  size: 97, 103
+  orig: 97, 103
+  offset: 0, 0
+  index: -1
+Arm_R_02
+  rotate: false
+  xy: 455, 291
+  size: 81, 88
+  orig: 81, 88
+  offset: 0, 0
+  index: -1
+Body
+  rotate: false
+  xy: 416, 18
+  size: 161, 170
+  orig: 161, 170
+  offset: 0, 0
+  index: -1
+Colth_1
+  rotate: false
+  xy: 660, 181
+  size: 134, 97
+  orig: 134, 97
+  offset: 0, 0
+  index: -1
+Colth_2
+  rotate: false
+  xy: 455, 191
+  size: 104, 98
+  orig: 104, 98
+  offset: 0, 0
+  index: -1
+Colth_3
+  rotate: true
+  xy: 278, 190
+  size: 180, 175
+  orig: 180, 175
+  offset: 0, 0
+  index: -1
+Colth_4
+  rotate: false
+  xy: 539, 372
+  size: 241, 215
+  orig: 241, 215
+  offset: 0, 0
+  index: -1
+Decorate_1
+  rotate: false
+  xy: 664, 280
+  size: 135, 90
+  orig: 135, 90
+  offset: 0, 0
+  index: -1
+Decorate_2
+  rotate: true
+  xy: 685, 6
+  size: 69, 43
+  orig: 69, 43
+  offset: 0, 0
+  index: -1
+Ear_L
+  rotate: true
+  xy: 140, 4
+  size: 165, 185
+  orig: 165, 185
+  offset: 0, 0
+  index: -1
+Ear_R_A
+  rotate: true
+  xy: 327, 8
+  size: 180, 87
+  orig: 180, 87
+  offset: 0, 0
+  index: -1
+Ear_R_B
+  rotate: false
+  xy: 2, 2
+  size: 136, 167
+  orig: 136, 167
+  offset: 0, 0
+  index: -1
+Earfur_L
+  rotate: false
+  xy: 782, 553
+  size: 28, 34
+  orig: 28, 34
+  offset: 0, 0
+  index: -1
+Earfur_R
+  rotate: true
+  xy: 730, 18
+  size: 57, 43
+  orig: 57, 43
+  offset: 0, 0
+  index: -1
+Face
+  rotate: true
+  xy: 173, 182
+  size: 188, 103
+  orig: 188, 103
+  offset: 0, 0
+  index: -1
+Foot_L
+  rotate: true
+  xy: 538, 295
+  size: 75, 124
+  orig: 75, 124
+  offset: 0, 0
+  index: -1
+Foot_R
+  rotate: true
+  xy: 579, 4
+  size: 73, 104
+  orig: 73, 104
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 539, 589
+  size: 251, 224
+  orig: 251, 224
+  offset: 0, 0
+  index: -1
+Red_Halo
+  rotate: true
+  xy: 792, 671
+  size: 142, 16
+  orig: 142, 16
+  offset: 0, 0
+  index: -1
+Tail
+  rotate: false
+  xy: 2, 171
+  size: 169, 199
+  orig: 169, 199
+  offset: 0, 0
+  index: -1
+Weapon
+  rotate: false
+  xy: 2, 381
+  size: 535, 432
+  orig: 535, 432
+  offset: 0, 0
+  index: -1
+touying
+  rotate: true
+  xy: 782, 499
+  size: 52, 25
+  orig: 52, 25
+  offset: 0, 0
+  index: -1
