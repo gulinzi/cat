@@ -2,7 +2,7 @@
     <section class="section-item section-characters">
         <div class="normal-layout section-content">
             <div class="title">{{ localeData['characters.title'] }}</div>
-            <div class="tab-list frcc">
+            <!-- <div class="tab-list frcc">
                 <a
                     class="common-button button-60"
                     :class="country === curCountry ? 'button-primary' : 'button-black'"
@@ -10,7 +10,7 @@
                     :key="country"
                     @click="handleChangeCountry(country)"
                 >{{ localeData[country] }}</a>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>
@@ -18,6 +18,7 @@
 <script setup>
 import useLocale from '@/hooks/useLocale'
 import cats from '@/utils/cats'
+import human from '@/utils/human'
 import { onMounted, ref } from 'vue'
 
 const emit = defineEmits('changeCountry');
@@ -25,13 +26,12 @@ const localeData = useLocale();
 const curCountry = ref('');
 
 onMounted(() => {
-    const defaultCountry = 'characters.country1'
-    handleChangeCountry(defaultCountry)
+    handleChangeCountry(human)
 })
 
-const handleChangeCountry = (country) => {
-    emit('changeCountry', cats[country]);
-    curCountry.value = country
+const handleChangeCountry = (data) => {
+    curCountry.value = data
+    emit('changeCountry',data)
 }
 </script>
 

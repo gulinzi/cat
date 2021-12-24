@@ -3,10 +3,10 @@
         <div class="copyright-box">
             <div class="copyright-left frcc">
                 <div class="item-text">Incubated By</div>
-                <img src="../../assets/yooshi-labs-bg-block.png" />
+                <img src="../../assets/logo.png" />
             </div>
         </div>
-        <div class="copyright">Copyright © 2021 DNAxCAT.io All Rights Reserved</div>
+        <div class="copyright">Copyright © 2021</div>
     </div>
 </template>
 

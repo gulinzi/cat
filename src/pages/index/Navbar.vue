@@ -11,7 +11,7 @@
                     </li>
                     <li class="menu-item">
                         <a class="frsc">
-                            <span>Play Now</span>
+                            <span>Live</span>
                             <img src="../../assets/new.png" class="menu-arrow menu-arrow__new" alt />
                         </a>
                     </li>
@@ -22,25 +22,25 @@
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a class="frsc">Farm</a>
+                        <a class="frsc" target="__blank" href="https://dd.ddlive.me/">Studio</a>
                     </li>
                     <li class="menu-item">
-                        <a class="frsc">Help Center</a>
+                        <a class="frsc">DAO</a>
                     </li>
                     <li class="menu-item">
-                        <a class="frsc">Learn More</a>
+                        <a class="frsc" target="__blank" href="https://dd-live.oss-cn-shanghai.aliyuncs.com/v17/file/DDmetaDeck.pdf">DOCS</a>
                     </li>
                 </ul>
             </section>
             <section class="navbar__right frsc">
                 <div class="entrys">
-                    <div class="entry-item entry-item-wallet">
+                    <!-- <div class="entry-item entry-item-wallet">
                         <a
                             target="_blank"
                             href
                             class="common-button button-primary button-42"
                         >My Cat</a>
-                    </div>
+                    </div> -->
                     <lng-select></lng-select>
                     <Collaspe></Collaspe>
                 </div>

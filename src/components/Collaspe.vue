@@ -28,7 +28,7 @@
                         </div>
                         <div class="menu-item">
                             <a href="javascript:;">
-                                Play Now
+                                Live
                                 <span class="item-arrow item-arrow-new"></span>
                             </a>
                         </div>
@@ -39,18 +39,18 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a href target="_blank">Farm</a>
+                            <a href="https://dd.ddlive.me/" target="_blank">Studio</a>
                         </div>
                         <div class="menu-item">
-                            <a href target="_blank">Help Center</a>
+                            <a target="_blank">DAO</a>
                         </div>
                         <div class="menu-item">
-                            <a href target="_blank">Learn More</a>
+                            <a href="https://dd-live.oss-cn-shanghai.aliyuncs.com/v17/file/DDmetaDeck.pdf" target="_blank">DOCS</a>
                         </div>
                     </div>
-                    <div class="buttons">
+                    <!-- <div class="buttons">
                         <a href class="common-button button-primary button-42">My Cat</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </teleport>

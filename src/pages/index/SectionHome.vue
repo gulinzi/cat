@@ -4,12 +4,16 @@
             <div class="content-left">
                 <div class="title">{{ localeData['home.title'] }}</div>
                 <div class="buttons frsc">
-                    <a href target="_blank" class="common-button button-42 button-second">{{localeData['home.button1']}}</a>
-                    <a class="common-button button-42 button-outline">{{localeData['home.button2']}}</a>
+                    <a
+                        href="https://dd.ddlive.me"
+                        target="_blank"
+                        class="common-button button-42 button-second"
+                    >{{ localeData['home.button1'] }}</a>
+                    <a class="common-button button-42 button-outline">{{ localeData['home.button2'] }}</a>
                 </div>
             </div>
             <div class="content-right">
-                <video
+                <!-- <video
                     playsinline
                     autoplay="autoplay"
                     loop="loop"
@@ -17,27 +21,28 @@
                     muted="muted"
                 >
                     <source src="../../assets/home-video.mp4" type="video/mp4" />
-                </video>
+                </video>-->
+                <img src="../../assets/home-gif.gif" alt />
             </div>
         </div>
         <div class="socials">
             <div class="normal-layout">
                 <div class="social-list frsc">
-                    <a class="frcc" href="https://twitter.com/dnaxcat_game" target="_blank">
+                    <a class="frcc" href="https://twitter.com/DDLive_meta" target="_blank">
                         <img src="../../assets/icon-social-twitter.svg" />
                     </a>
-                    <a class="frcc" href="https://t.me/DNAxCAT_official" target="_blank">
+                    <a class="frcc" href="https://t.me/DDMeta" target="_blank">
                         <img src="../../assets/icon-social-telegram.svg" />
                     </a>
-                    <a class="frcc" href="https://medium.com/@DNAxCAT_GAME" target="_blank">
+                    <a class="frcc" href="https://medium.com/@DDMeta" target="_blank">
                         <img src="../../assets/icon-social-medium.svg" />
                     </a>
-                    <a class="frcc" href="https://discord.gg/YooShiGamePad" target="_blank">
+                    <a class="frcc" href="https://discord.gg/gYwAaEzUhj" target="_blank">
                         <img src="../../assets/icon-social-discord.svg" />
                     </a>
-                    <a class="frcc" href="mailto:hello@dnaxcat.io" target="_blank">
+                    <!-- <a class="frcc" href="mailto:hello@dnaxcat.io" target="_blank">
                         <img src="../../assets/email_icon.svg" />
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -47,7 +52,7 @@
 <script setup>
 import useLocale from '@/hooks/useLocale'
 
-const localeData=useLocale()
+const localeData = useLocale()
 </script>
 
 <style lang="less" scoped>
@@ -82,11 +87,16 @@ const localeData=useLocale()
 .content-right {
     position: absolute;
     z-index: 1;
-    width: 900px;
-    height: 512px;
-    right: -130px;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 800px;
+    height: 730px;
+    right: -100px;
+    top: -20px;
+    // transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100%;
+    }
     video {
         width: 100%;
         height: 100%;
@@ -157,7 +167,7 @@ const localeData=useLocale()
 
         .content-right {
             width: 100%;
-            height: calc(56.889vw - 22.7556px);
+            height: calc(90.889vw - 22.7556px);
             right: unset;
             top: unset;
             transform: unset;

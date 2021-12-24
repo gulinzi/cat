@@ -7,45 +7,74 @@
                     <div class="lable-icon"></div>
                     <div class="info-name">
                         <div class="info-title">{{ curCat.name }}</div>
-                        <div class="element-icon">
+                        <!-- <div class="element-icon">
                             <img :src="curCat.elementIcon" />
-                        </div>
+                        </div>-->
                     </div>
                     <div class="infos">
-                        <div class="info-item">
+                        <span>{{ curCat.desc }}</span>
+                        <!-- <div class="info-item">
                             {{ localeData["chararters.element"] }}:
                             <span>{{ curCat.element }}</span>
                         </div>
                         <div class="info-item">
                             {{ localeData["chararters.force"] }}:
                             <span>{{ localeData[curCat.country] }}</span>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
                 <div class="info-bottom">
-                    <div class="sub-title">{{ localeData["chararters.body"] }}</div>
+                    <div class="sub-title">{{ localeData["chararters.Properties"] }}</div>
                     <div class="part-list">
-                        <div
+                        <!-- <div
                             class="part-item"
                             :key="bodyItem.name"
                             v-for="bodyItem in curCat.bodyParts"
                         >
                             <img :src="bodyItem.icon" />
                             <span>{{ bodyItem.name }}</span>
+                        </div>-->
+                        <div class="part-item">
+                            <div class="part-title">
+                                <span>{{ localeData["chararters.Properties.Power"] }}：</span>
+                            </div>
+                            <span>{{ curCat?.properties?.Power }}</span>
+                        </div>
+                        <div class="part-item">
+                            <div class="part-title">
+                                <span>{{ localeData["chararters.Properties.Gender"] }}：</span>
+                            </div>
+                            <span>{{ curCat?.properties?.Gender }}</span>
+                        </div>
+                        <div class="part-item">
+                            <div class="part-title">
+                                <span>{{ localeData["chararters.Properties.Nature"] }}：</span>
+                            </div>
+                            <span>{{ curCat?.properties?.Nature }}</span>
+                        </div>
+                        <div class="part-item">
+                            <div class="part-title">
+                                <span>{{ localeData["chararters.Properties.Popularity"] }}：</span>
+                            </div>
+                            <img
+                                src="../../assets/star.png"
+                                v-for="star in curCat?.properties?.Popularity"
+                                :key="star"
+                            />
                         </div>
                     </div>
                 </div>
             </div>
             <div class="main-info">
                 <div class="cover frcc" id="cover">
-                    <!-- <img :src="curCat.aniPic" @load="handleLoadGif" alt /> -->
+                    <img :src="curCat.mainPic" @load="handleLoadGif" alt />
                     <loading v-show="imgShowLoading"></loading>
-                    <canvas
+                    <!-- <canvas
                         :class="!imgShowLoading ? 'active' : ''"
                         v-show="!imgShowLoading"
                         class="spine-view"
                         ref="canvas"
-                    ></canvas>
+                    ></canvas>-->
                 </div>
                 <div class="scroll-outer">
                     <a
@@ -55,7 +84,7 @@
                     ></a>
                     <div class="scroll-view">
                         <swiper @swiper="onSwiper" :slides-per-view="3">
-                            <swiper-slide v-for="(cat,index) in catList" :key="cat.name">
+                            <swiper-slide v-for="(cat,index) in catList" :key="index">
                                 <div
                                     class="nft-item"
                                     :class="cat.name === curCat.name ? 'selected' : ''"
@@ -64,10 +93,10 @@
                                     <div
                                         class="icon bg-box box-square"
                                         :style="{
-                                            'backgroundImage': `url(${cat.statisPic})`
+                                            'backgroundImage': `url(${cat.staticPic})`
                                         }"
                                     ></div>
-                                    <div class="title">{{ cat.name }}</div>
+                                    <!-- <div class="title">{{ cat.name }}</div> -->
                                 </div>
                             </swiper-slide>
                         </swiper>
@@ -80,7 +109,8 @@
                 </div>
             </div>
             <div class="aside-attrs">
-                <div class="top-info">
+                <img :src="curCat.skillsPic" alt />
+                <!-- <div class="top-info">
                     <div class="sub-title">{{ localeData["chararters.Properties"] }}</div>
                     <div class="element-list">
                         <div class="data-item">
@@ -145,7 +175,7 @@
                             <div class="brief">{{ skill.desc }}</div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -186,32 +216,33 @@ const changeCountry = (_catList) => {
         curCatIndex.value = 0;
         catSwiper.value && catSwiper.value.slideTo(0)
     }
+    console.log(curCat.value)
 };
 const onSwiper = (swiper) => {
     catSwiper.value = swiper;
 }
 
-watch(curCatIndex, (newVal) => {
-    if (catList.value.length) {
-        curCat.value = catList.value[newVal]
-    }
-})
-watch(curCat, () => {
-    drawCat()
-}, { deep: true })
+// watch(curCatIndex, (newVal) => {
+//     if (catList.value.length) {
+//         curCat.value = catList.value[newVal]
+//     }
+// })
+// watch(curCat, () => {
+//     drawCat()
+// }, { deep: true })
 
 const handleClickSlide = (index) => {
     catSwiper.value.slideTo(index);
-    curCatIndex.value = index;
+    // curCatIndex.value = index;
 }
 
 const handleSlidePrev = () => {
     catSwiper.value.slidePrev();
-    curCatIndex.value--;
+    // curCatIndex.value--;
 }
 const handleSlideNext = () => {
     catSwiper.value.slideNext();
-    curCatIndex.value++;
+    // curCatIndex.value++;
 }
 
 const drawCat = () => {
@@ -265,6 +296,7 @@ onMounted(() => {
 }
 .aside-info::before {
     right: 0;
+    display: none;
     background: linear-gradient(90deg, #181818, #2f2f2f);
 }
 .section-characters-2 .info-top,
@@ -286,10 +318,10 @@ onMounted(() => {
     box-sizing: border-box;
 }
 .section-characters-2 .aside-info .info-top .lable-icon {
-    width: 80px;
-    height: 38px;
+    width: 130px;
+    height: 44px;
     margin-left: -10px;
-    background: url("../../assets/genesis.png");
+    background: url("../../assets/metahuman.png");
     background-position: 0;
     background-size: 100%;
 }
@@ -316,6 +348,7 @@ onMounted(() => {
 .info-top .infos {
     margin-top: 20px;
     font-size: 16px;
+    color: #7f7f7f;
 }
 .info-top .infos .info-item {
     margin: 10px 0;
@@ -344,14 +377,22 @@ onMounted(() => {
     display: flex;
     align-items: center;
     margin-bottom: 14px;
+    .part-title {
+        color: #7f7f7f;
+    }
 }
 .section-characters-2 .part-list .part-item img {
-    max-width: 36px;
-    max-height: 36px;
-    margin-right: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    margin-right: 4px;
+    // margin-right: 16px;
+}
+.section-characters-2 .aside-attrs {
+    padding-top: 45px;
 }
 .section-characters-2 .aside-attrs:before {
     left: 0;
+    display: none;
     background: linear-gradient(90deg, #2f2f2f, #181818);
 }
 .section-characters-2 .sub-title {
@@ -430,18 +471,21 @@ onMounted(() => {
     line-height: 1.3;
 }
 .section-characters-2 .main-info {
-    width: 592px;
+    width: 500px;
     position: relative;
 }
 
 .section-characters-2 .main-info .cover {
     height: 592px;
-    background-image: url(../../assets/icon-cover-bg.svg);
+    // background-image: url(../../assets/icon-cover-bg.svg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
     background-color: #161616;
+    img {
+        height: 95%;
+    }
     canvas {
         width: 100%;
         height: 100%;
@@ -484,10 +528,10 @@ onMounted(() => {
     transition: all 0.4s ease;
 }
 .op-icon.left-icon {
-    left: 60px;
+    left: 10px;
 }
 .op-icon.right-icon {
-    right: 60px;
+    right: 10px;
 }
 .section-characters-2 .scroll-outer .op-icon:before {
     content: " ";
@@ -545,11 +589,11 @@ onMounted(() => {
     }
 }
 .section-characters-2 .scroll-outer .scroll-view .nft-item .icon {
-    background-size: 90%;
+    background-size: auto 90%;
 }
 .bg-box.box-square {
     height: 0;
-    padding-bottom: 100%;
+    padding-bottom: 140%;
 }
 .section-characters-2
     .scroll-outer
@@ -742,12 +786,12 @@ onMounted(() => {
         flex-wrap: wrap;
     }
     .section-characters-2 .part-list .part-item {
-        flex-direction: column-reverse;
+        // flex-direction: column-reverse;
         width: 33.33333%;
         font-size: 12px;
         color: #7f7f7f;
         margin: 6px 0;
-        align-items: unset;
+        align-items: center;
     }
     .section-characters-2 .part-list .part-item img {
         margin-top: 6px;

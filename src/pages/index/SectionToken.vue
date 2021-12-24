@@ -3,7 +3,7 @@
         <div class="normal-layout section-content">
             <div class="token-infos frcc">
                 <div class="left-info">
-                    <div class="item-title">DNAxCAT TOKEN</div>
+                    <div class="item-title">DDMETA TOKEN</div>
                     <div class="item-brief">{{localeData['token.desc']}}</div>
                     <div class="item-contract">
                         Contract
@@ -15,7 +15,7 @@
                             target="_blank"
                             href
                             class="common-button button-42 button-second"
-                        >{{localeData['home.button1']}}</a>
+                        >{{localeData['token.btn']}}</a>
                     </div>
                 </div>
                 <div class="right-chart">

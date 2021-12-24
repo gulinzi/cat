@@ -29,24 +29,51 @@
                 </div>
             </div>
         </div>
+        <div class="normal-layout section-content">
+            <div class="title">{{ localeData['roadMap.title'] }}</div>
+            <div class="road-list frss fww">
+                <div
+                    class="road-item"
+                    v-for="item in localeData['roadMap.text'] || []"
+                    :key="item.title"
+                >
+                    <h5 class="road-item__title">{{ item.title }}</h5>
+                    <ul class="road-item__wrapper">
+                        <li
+                            class="road-item__text"
+                            v-for="text in item.content"
+                            :key="text"
+                        >{{ text }}{{ text }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="normal-layout section-content supporter">
             <div class="title">{{ localeData['supporter.title'] }}</div>
             <div class="friends-list">
                 <a href target="_blank" class="friend-item">
-                    <img src="../../assets/supporter-yooshi.png" alt="">
+                    <img src="../../assets/partners/logo(1).png" alt />
                 </a>
                 <a href target="_blank" class="friend-item">
-                    <img src="../../assets/supporter-binance.png" alt="">
+                    <img src="../../assets/partners/logo(2).png" alt />
                 </a>
                 <a href target="_blank" class="friend-item">
-                    <img src="../../assets/supporter-coinmarket.png" alt="">
+                    <img src="../../assets/partners/logo(3).png" alt />
                 </a>
                 <a href target="_blank" class="friend-item">
-                    <img src="../../assets/supporter-cer.png" alt="">
+                    <img src="../../assets/partners/logo(4).png" alt />
                 </a>
                 <a href target="_blank" class="friend-item">
-                    <img src="../../assets/supporter-cgc.png" alt="">
-
+                    <img src="../../assets/partners/logo(5).png" alt />
+                </a>
+                <a href target="_blank" class="friend-item">
+                    <img src="../../assets/partners/logo(6).png" alt />
+                </a>
+                <a href target="_blank" class="friend-item">
+                    <img src="../../assets/partners/logo(7).png" alt />
+                </a>
+                <a href target="_blank" class="friend-item">
+                    <img src="../../assets/partners/logo(8).png" alt />
                 </a>
             </div>
         </div>
@@ -115,17 +142,40 @@ const localeData = useLocale()
         background-repeat: no-repeat;
         background-position: 50%;
         background-size: contain;
-        margin: 10px;
-        filter: grayscale(1);
+        margin: 10px 30px;
+        // filter: grayscale(1);
         transition: filter 0.4s ease;
-        img{
-            width:100%;
-            height:100%;
+        img {
+            width: 100%;
+            height: 100%;
             object-fit: contain;
         }
-        &:hover{
+        &:hover {
             filter: none;
         }
+    }
+}
+.road-list {
+    padding: 60px 20px 100px;
+    .road-item {
+        width: 25%;
+        margin: 20px 0;
+        padding:0 20px;
+        box-sizing: border-box;
+    }
+    .road-item__title {
+        font-size: 24px;
+    }
+    .road-item__wrapper {
+        margin-top: 20px;
+        padding: 0 0
+    }
+    .road-item__text {
+        margin: 15px 0;
+        font-size: 16px;
+        color:#7f7f7f;
+        list-style-type: disc;
+        list-style-position: outside;
     }
 }
 
@@ -152,6 +202,22 @@ const localeData = useLocale()
     }
     .section-friends .friends-list .friend-item {
         margin: 8px;
+    }
+    .road-list {
+        .road-item {
+            width: 50%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .road-list {
+        .road-item {
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
     }
 }
 @media screen and (max-width: 490px) {

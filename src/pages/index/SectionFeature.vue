@@ -19,14 +19,14 @@
                 </div>
                 <div class="common-bg feature-item">
                     <div class="cover">
-                        <img src="../../assets/features-3.png" alt />
+                        <img src="../../assets/features-3.jpg" alt />
                     </div>
                     <div class="title frsc">{{ localeData['features.item3.title'] }}</div>
                     <div class="brief">{{ localeData['features.item3.desc'] }}</div>
                 </div>
                 <div class="common-bg feature-item">
                     <div class="cover">
-                        <img src="../../assets/features-4.png" alt />
+                        <img src="../../assets/features-4.jpg" alt />
                     </div>
                     <div class="title frsc">{{ localeData['features.item4.title'] }}</div>
                     <div class="brief">{{ localeData['features.item4.desc'] }}</div>
@@ -80,7 +80,7 @@ const localeData = useLocale()
     }
     .cover {
         height: 0;
-        padding-bottom: 50%;
+        padding-bottom: 70%;
         position: relative;
         img {
             width: 100%;
