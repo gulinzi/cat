@@ -10,10 +10,13 @@
                         <a class="frsc">Home</a>
                     </li>
                     <li class="menu-item">
-                        <a class="frsc">
+                        <download-modal>
+<a class="frsc">
                             <span>Live</span>
                             <img src="../../assets/new.png" class="menu-arrow menu-arrow__new" alt />
                         </a>
+                        </download-modal>
+                        
                     </li>
                     <li class="menu-item">
                         <a class="frsc">
@@ -52,6 +55,7 @@
 <script setup>
 import LngSelect from '@/components/LngSelect'
 import Collaspe from '@/components/Collaspe'
+import DownloadModal from '@/components/DownloadModal';
 </script>
 
 <style lang="less" scoped>

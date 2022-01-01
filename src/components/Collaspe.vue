@@ -27,10 +27,12 @@
                             >Home</a>
                         </div>
                         <div class="menu-item">
-                            <a href="javascript:;">
-                                Live
-                                <span class="item-arrow item-arrow-new"></span>
-                            </a>
+                            <download-modal>
+                                <a href="javascript:;">
+                                    Live
+                                    <span class="item-arrow item-arrow-new"></span>
+                                </a>
+                            </download-modal>
                         </div>
                         <div class="menu-item">
                             <a href target="_blank">
@@ -45,12 +47,15 @@
                             <a target="_blank">DAO</a>
                         </div>
                         <div class="menu-item">
-                            <a href="https://dd-live.oss-cn-shanghai.aliyuncs.com/v17/file/DDmetaDeck.pdf" target="_blank">DOCS</a>
+                            <a
+                                href="https://dd-live.oss-cn-shanghai.aliyuncs.com/v17/file/DDmetaDeck.pdf"
+                                target="_blank"
+                            >DOCS</a>
                         </div>
                     </div>
                     <!-- <div class="buttons">
                         <a href class="common-button button-primary button-42">My Cat</a>
-                    </div> -->
+                    </div>-->
                 </div>
             </div>
         </teleport>
@@ -59,6 +64,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import DownloadModal from './DownloadModal';
 const visible = ref(false)
 const animateShow = ref(false);
 
@@ -172,38 +178,5 @@ const handleClose = () => {
 .buttons a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}
-.common-close {
-    position: absolute;
-    top: 35px;
-    width: 20px;
-    height: 20px;
-    transform: translateY(-50%) rotate(45deg);
-    text-indent: -999em;
-}
-
-.common-close:after,
-.common-close:before {
-    content: " ";
-    line-height: 2px;
-    background: #333;
-    position: absolute;
-}
-.common-close:before {
-    height: 2px;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-}
-.common-close:after {
-    width: 2px;
-    height: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.common-close:after,
-.common-close:before {
-    background: #fff;
 }
 </style>
